@@ -53,9 +53,7 @@ module.exports = configure(function (ctx) {
         node: 'node16',
       },
       env: {
-        SERVER_BASE_URL: ctx.dev
-          ? 'localhost:3000'
-          : process.env.SERVER_BASE_URL,
+        SERVER_BASE_URL: ctx.dev ? 'http://10.20.35.111:31195' : process.env.SERVER_BASE_URL,
       },
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
